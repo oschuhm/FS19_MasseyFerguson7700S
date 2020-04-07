@@ -856,7 +856,21 @@
 			<part node="windowBack" startTime="0" endTime="2" startRot="0 0 0" endRot="70 0 0" />
         </animation>
     </animations>
-
+	
+	<simpleIC outsideInteractionTrigger="0>0|9|8|21" >
+		<!--<animation animationName="doorUpMovement" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<insideTrigger triggerPoint="0>0|5|10|7|3" triggerPointSize="0.04" />
+		</animation>
+		-->
+		<animation animationName="doorBackMovement" animationSpeed="1.5" sharedAnimation="false" soundVolumeIncreasePercentage="10.0" >
+			<insideTrigger triggerPoint="0>0|9|8|16|8" triggerPointSize="0.04" />
+		</animation>	
+		<animation animationName="doorLeftMovement" animationSpeed="1.5" sharedAnimation="false" soundVolumeIncreasePercentage="10.0" >
+			<outsideTrigger triggerPoint="0>0|9|8|14|0|0|0|8" triggerPointSize="0.04" />
+			<insideTrigger triggerPoint="0>0|9|8|14|0|0|0|7" triggerPointSize="0.04" />
+		</animation>
+	</simpleIC>
+	
     <cylindered>
         <movingTools>
             <movingTool node="attacherJointBackArmBottom">
@@ -865,17 +879,21 @@
             <movingTool node="attacherJointFrontArmBottom">
                 <dependentPart node="hydraulicFront"/>
             </movingTool>
+			<!--
 			<movingTool node="windowLeft">
                 <controls axis="AXIS_FRONTLOADER_ARM" invertAxis="true" mouseSpeedFactor="0.8" iconName="TOP_DOOR_ROTATE" />
                 <animation animSpeed="0.8" animAcceleration="200" animName="doorLeftMovement" />
 				<dependentPart node="hydraulicDoor"/>
             </movingTool>
+			-->
+			<!--
 			<movingTool node="windowBack">
                 <controls axis="AXIS_FRONTLOADER_TOOL" invertAxis="true" mouseSpeedFactor="0.8" iconName="TOP_DOOR_ROTATE" />
                 <animation animSpeed="0.8" animAcceleration="200" animName="doorBackMovement" />
 				<dependentPart node="cylinderL"/>
 				<dependentPart node="cylinderR"/>
             </movingTool>
+			-->
         </movingTools>
 
         <movingParts>
