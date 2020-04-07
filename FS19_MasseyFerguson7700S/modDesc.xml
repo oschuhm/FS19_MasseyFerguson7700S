@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="46">
+    <author>STv-Modding, LS-Farmers</author>
+    <version>1.2.0.0.2</version>
+    <title>
+        <en>Massey Ferguson 7700S</en>
+    </title>
+    <description>
+        <en>
+<![CDATA[
+Price: 176000 €
+Power: 210-280hp
+Design Color Configurations
+-Update 1.1.0.0
+-New Colors Design
+-Fixed various bugs
+-New Colors Rims
+-Update 1.2.0.0
+-New LED Lights
+-New Skin Lights
+-New Details
+-New Tires Configurations]]>
+        </en>
+        <de>
+<![CDATA[
+Preis: 176.000€
+Leistung: 210-280PS
+Design-Konfigurationen
+-Update 1.1.0.0
+-Neues Farbdesign
+-Verschiedene Fehler behoben
+-Felgen in neuen Farben
+-Update 1.2.0.0
+-Neue LED Lichter
+-Neue Hauptlichter
+-Neue Details
+-Neue Reifen Konfigurationen]]>
+        </de>
+        <fr>
+<![CDATA[
+Prix: 176.000 €
+Puissance: 210-280hp
+Configurations de conception
+-Update 1.1.0.0
+-Nouveau design des couleurs
+-Bugs corrigés
+-Nouvelles couleurs jantes
+-Update 1.2.0.0
+-Nouvelles lumières LED
+-Nouvelles lumières de peau
+-Nouveaux détails
+-Nouvelles configurations de pneus]]>
+        </fr>
+		<it>
+<![CDATA[
+Prezzo: 176.000 €
+Potenza: 210-280hp
+Configurazione Design
+-Update 1.1.0.0
+-Nuovi Colori Design 
+-Fix vari bug 
+-Nuovi colori cerchi
+-Update 1.2.0.0
+-Nuove luci LED
+-Nuovi Dettagli
+-Nuove configurazione gomme]]>
+        </it>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<l10n>
+	    <text name="configurationRedM">
+            <en>Red metal grill</en>
+            <de>Rot Metall</de>
+			<it>Rosso metalizzato</it>
+        </text>	
+		<text name="configurationRedMAT">
+            <en>Red mat grill</en>
+            <de>Rot Matt</de>
+			<it>Rosso opaco</it>
+        </text>	
+		<text name="configurationBlack">
+            <en>Black grill</en>
+            <de>Schwarzer Grill</de>
+			<it>Griglia Nera</it>
+        </text>	
+		<text name="configurationBlackMAT">
+            <en>Black mat grill</en>
+            <de>Schwarzer Grill Matt</de>
+			<it>Opaco Nero</it>
+        </text>	
+		<text name="configurationGold">
+            <en>Gold grill</en>
+            <de>Gelber Grill</de>
+			<it>Oro</it>
+        </text>	
+		<text name="configurationGoldMAT">
+            <en>Gold mat grill</en>
+            <de>Gelber Grill Matt</de>
+			<it>Opaco Oro</it>
+        </text>	
+		<text name="configurationAnniversary">
+            <en>Anniversary Edition</en>
+            <de>Jubiläums Version</de>
+			<it>Edizione Anniversario</it>
+        </text>	
+	</l10n>
+  
+	<storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="MF7700S.xml"/>
+    </storeItems>
+</modDesc>
