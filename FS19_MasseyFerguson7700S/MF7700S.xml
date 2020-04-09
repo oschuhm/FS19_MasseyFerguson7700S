@@ -865,14 +865,11 @@
 			<outsideTrigger triggerPoint="sIC_doorLeftOutside" triggerPointSize="0.04" />
 			<insideTrigger triggerPoint="sIC_doorLeftInside" triggerPointSize="0.04" />
 		</animation>
-		<animation animationName="lowerBack">
-			<outsideTrigger triggerPoint="sIC_lowerBackOutside" triggerPointSize="0.04" />
-		</animation>
-		<animation animationName="upperBack">
-			<outsideTrigger triggerPoint="sIC_upperBackOutside" triggerPointSize="0.04" />
+		<animation animationName="moveBackHydraulic">
+			<outsideTrigger triggerPoint="sIC_lowerBackOutside" triggerPointSize="0.01" />
 		</animation>
 		<animation animationName="activateBack">
-			<outsideTrigger triggerPoint="sIC_activateBackOutside" triggerPointSize="0.04" />
+			<outsideTrigger triggerPoint="sIC_upperBackOutside" triggerPointSize="0.01" />
 		</animation>
 	</simpleIC>
 	
@@ -1363,9 +1360,9 @@
 		<i3dMapping id="sIC_windowBackInside" node="0>0|9|8|16|8" />
 		<i3dMapping id="sIC_doorLeftInside" node="0>0|9|8|14|0|0|0|7" />
 		<i3dMapping id="sIC_doorLeftOutside" node="0>0|9|8|14|0|0|0|8" />
-		<i3dMapping id="sIC_lowerBackOutside" node="" />
-		<i3dMapping id="sIC_upperBackOutside" node="" />
-		<i3dMapping id="sIC_activateBackOutside" node="" />
+		<i3dMapping id="sIC_lowerBackOutside" node="0>0|12" />
+		<i3dMapping id="sIC_upperBackOutside" node="0>0|13" />
+		<i3dMapping id="sIC_activateBackOutside" node="0>0|14" />
 		
     </i3dMappings>
 </vehicle>
