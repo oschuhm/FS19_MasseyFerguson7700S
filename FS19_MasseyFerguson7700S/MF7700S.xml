@@ -857,17 +857,22 @@
         </animation>
     </animations>
 	
-	<simpleIC outsideInteractionTrigger="0>0|9|8|21" >
-		<!--<animation animationName="doorUpMovement" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
-			<insideTrigger triggerPoint="0>0|5|10|7|3" triggerPointSize="0.04" />
-		</animation>
-		-->
+	<simpleIC outsideInteractionTrigger="sIC_playerTrigger" >
 		<animation animationName="doorBackMovement" animationSpeed="1.5" sharedAnimation="false" soundVolumeIncreasePercentage="10.0" >
-			<insideTrigger triggerPoint="0>0|9|8|16|8" triggerPointSize="0.04" />
+			<insideTrigger triggerPoint="sIC_windowBackInside" triggerPointSize="0.04" />
 		</animation>	
 		<animation animationName="doorLeftMovement" animationSpeed="1.5" sharedAnimation="false" soundVolumeIncreasePercentage="10.0" >
-			<outsideTrigger triggerPoint="0>0|9|8|14|0|0|0|8" triggerPointSize="0.04" />
-			<insideTrigger triggerPoint="0>0|9|8|14|0|0|0|7" triggerPointSize="0.04" />
+			<outsideTrigger triggerPoint="sIC_doorLeftOutside" triggerPointSize="0.04" />
+			<insideTrigger triggerPoint="sIC_doorLeftInside" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="lowerBack">
+			<outsideTrigger triggerPoint="sIC_lowerBackOutside" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="upperBack">
+			<outsideTrigger triggerPoint="sIC_upperBackOutside" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="activateBack">
+			<outsideTrigger triggerPoint="sIC_activateBackOutside" triggerPointSize="0.04" />
 		</animation>
 	</simpleIC>
 	
@@ -1352,5 +1357,15 @@
 		<i3dMapping id="workingLightOval02_11" node="0>0|9|4|3|13" />
 		<i3dMapping id="hellaWorkingLightOval_01" node="0>0|9|4|3|2" />
 		<i3dMapping id="hellaWorkingLightOval_01_02" node="0>0|9|4|3|3" />
+		
+		<!-- simpleIC Mappings -->
+		<i3dMapping id="sIC_playerTrigger" node="0>0|9|8|21" />
+		<i3dMapping id="sIC_windowBackInside" node="0>0|9|8|16|8" />
+		<i3dMapping id="sIC_doorLeftInside" node="0>0|9|8|14|0|0|0|7" />
+		<i3dMapping id="sIC_doorLeftOutside" node="0>0|9|8|14|0|0|0|8" />
+		<i3dMapping id="sIC_lowerBackOutside" node="" />
+		<i3dMapping id="sIC_upperBackOutside" node="" />
+		<i3dMapping id="sIC_activateBackOutside" node="" />
+		
     </i3dMappings>
 </vehicle>
