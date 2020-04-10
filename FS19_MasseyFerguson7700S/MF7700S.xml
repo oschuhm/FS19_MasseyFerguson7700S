@@ -865,8 +865,11 @@
 			<outsideTrigger triggerPoint="sIC_doorLeftOutside" triggerPointSize="0.04" />
 			<insideTrigger triggerPoint="sIC_doorLeftInside" triggerPointSize="0.04" />
 		</animation>
-		<animation animationName="moveBackHydraulic">
+		<animation animationName="toogleBackHydraulic">
 			<outsideTrigger triggerPoint="sIC_lowerBackOutside" triggerPointSize="0.01" />
+		</animation>
+		<animation animationName="toogleFrontHydraulic">
+			<outsideTrigger triggerPoint="sIC_toggleFrontHydraulic" triggerPointSize="0.01" />
 		</animation>
 		<animation animationName="activateBack">
 			<outsideTrigger triggerPoint="sIC_upperBackOutside" triggerPointSize="0.01" />
@@ -1363,6 +1366,8 @@
 		<i3dMapping id="sIC_lowerBackOutside" node="0>0|12" />
 		<i3dMapping id="sIC_upperBackOutside" node="0>0|13" />
 		<i3dMapping id="sIC_activateBackOutside" node="0>0|14" />
+		<i3dMapping id="sIC_toggleFrontHydraulic" node="0>0|16" />
+		
 		
     </i3dMappings>
 </vehicle>
